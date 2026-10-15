@@ -69,18 +69,90 @@
         </div>
       </section>
 
+      
       <section id="gallery">
         <h2>The Polish Portfolio</h2>
+
         <p>Explore our collection of flawless sets, timeless designs, and statement-making nail artistry. Every detail is crafted with beauty and precision.</p>
+
         <div class="gallery-grid">
-          <img src="images/tpd--bling-nails.png" alt="Bling Nails" class="gallery-image">
-          <img src="images/tpd-toe-pink.png" alt="Pink Toe Nails with gold ankle bracelet" class="gallery-image">
-          <img src="images/tpd-toe-white.png" alt="White Toe Nails with gold ankle bracelet" class="gallery-image">
-          <img src="images/tpd-marble-nails.png" alt="Marble Nails" class="gallery-image">
-          <img src="images/tpd-black-n-pink-nails.png" alt="Black and Pink Nails" class="gallery-image">
-          <img src="images/tpd-nails-french-white.png" alt="French White Nails" class="gallery-image">
+
+          <a href="images/tpd--bling-nails.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/tpd--bling-nails.png"
+           alt="Bling Nails"
+           class="gallery-image">
+          </a>
+
+          <a href="images/tpd-toe-pink.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/tpd-toe-pink.png"
+           alt="Pink Toe Nails with gold ankle bracelet"
+           class="gallery-image">
+          </a>
+
+          <a href="images/tpd-toe-white.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/tpd-toe-white.png"
+           alt="White Toe Nails with gold ankle bracelet"
+           class="gallery-image">
+          </a>
+
+          <a href="images/tpd-marble-nails.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/tpd-marble-nails.png"
+           alt="Marble Nails"
+           class="gallery-image">
+          </a>
+
+          <a href="images/tpd-black-n-pink-nails.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/tpd-black-n-pink-nails.png"
+           alt="Black and Pink Nails"
+           class="gallery-image">
+          </a>
+
+          <a href="images/tpd-nails-french-white.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/tpd-nails-french-white.png"
+           alt="French White Nails"
+           class="gallery-image">
+          </a>
+
         </div>
       </section>
+      
+      <section id="policies">
+        <h2>Before You Book</h2>
+        <p>Please review our booking policies before requesting your appointment.</p>
+
+        <div class="policies-grid">
+          <article>
+            <h3>Deposits</h3>
+            <p>A $20 nonrefundable deposit is required to secure your appointment. Your deposit will be applied toward your total service cost.</p>
+          </article>
+
+          <article>
+            <h3>Late Arrivals</h3>
+            <p>We allow a 10-minute grace period. Arrivals more than 15 minutes late may need to reschedule, and the deposit may be forfeited.</p>
+          </article>
+
+          <article>
+            <h3>Cancellations & Rescheduling</h3>
+            <p>Please provide at least 24 hours' notice if you need to cancel or reschedule your appointment. Deposits are nonrefundable.</p>
+          </article>
+
+          <article>
+            <h3>No-Shows</h3>
+            <p>Clients who miss their appointments without notice may be required to pay a new deposit before booking again.</p>
+          </article>
+
+          <article>
+            <h3>Additional Guests</h3>
+            <p>To maintain a relaxing salon environment, please do not bring additional guests or children unless approved in advance.</p>
+          </article>
+
+          <article>
+            <h3>Nail Inspiration</h3>
+            <p>Please upload your inspiration photos when requesting your appointment. Detailed designs may require additional time and pricing.</p>
+            </article>
+        </div>
+      </section>
+
 
       <section id="booking">
         <h2>Book Your Appointment</h2>
@@ -132,6 +204,13 @@
 
             <label for="inspiration">Upload Your Nail Inspiration (Optional):</label>
             <input type="file" id="inspiration" name="inspiration" accept="image/*">
+
+            
+            <div class="policy-agreement">
+              <input type="checkbox" id="agree-policies" name="agree-policies" required>
+              <label for="agree-policies">I have read and agree to the booking policies.</label>
+            </div>
+
 
             <button type="submit">Request My Appointment</button>
           </form>

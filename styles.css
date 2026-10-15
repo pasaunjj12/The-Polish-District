@@ -116,6 +116,7 @@ header p {
     display: block;
     border: 3px solid #C99A3D;
     box-sizing: border-box;
+    cursor: zoom-in;
 }
 
 .gallery-grid {
@@ -224,6 +225,88 @@ footer {
     transform: rotate(45deg);
     margin: 15px auto 25px;
     box-shadow: 2px 2px 5px rgba(231, 42, 131, 0.3);
+}
+
+
+#policies {
+    padding: 15px 40px 40px;
+}
+
+#policies h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#policies > p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.policies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.policies-grid article {
+    background-color: #FFF0F6;
+    border: 2px solid #E72A83;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.policies-grid h3 {
+    color: #171717;
+    font-size: 22px;
+}
+
+.policies-grid p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#policies h2::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #E72A83;
+    transform: rotate(45deg);
+    margin: 15px auto 25px;
+    box-shadow: 2px 2px 5px rgba(231, 42, 131, 0.3);
+}
+
+
+.policy-agreement {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.policy-agreement input[type="checkbox"] {
+    width: auto;
+    margin: 4px 0 0;
+    flex-shrink: 0;
+}
+
+.policy-agreement label {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+@media (max-width: 600px) {
+    #policies {
+        padding: 15px 20px 30px;
+    }
+
+    .policies-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 
