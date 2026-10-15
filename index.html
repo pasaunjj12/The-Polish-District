@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Polish District</title>
+  </head>
+  <body>
+    <header id="home">
+      <img src="images/the-polish-district-logo (2).png" alt="The Polish District Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#booking">Booking</a></li>
+        </ul>
+      </nav>
+      <h1>Where Pretty Meets Perfection.</h1>
+      <p>Step into a world of luxury, creativity, and flawless nail artistry. At The Polish District, every set is designed to make you feel confident, beautiful, and unapologetically YOU.</p>
+    </header>
+
+    <main>
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <article>
+            <h3>Acrylic Full Set</h3>
+            <p>Enhance your natural nails with beautifully sculpted acrylic extensions, customized to your preferred shape and length.</p>
+            <p class="service-price">Starting at $55</p>
+            <p>Duration: 90 minutes</p>
+          </article>
+
+          <article>
+            <h3>Acrylic Fill-In</h3>
+            <p>Refresh your acrylic nails with a fill-in service to maintain their perfect look and shape.</p>
+            <p class="service-price">Starting at $40</p>
+            <p>Duration: 60 minutes</p>
+          </article>
+
+          <article>
+            <h3>Gel Manicure</h3>
+            <p>Indulge in a relaxing gel manicure, featuring a variety of stunning colors and finishes.</p>
+            <p class="service-price">Starting at $35</p>
+            <p>Duration: 45 minutes</p>
+          </article>
+
+          <article>
+            <h3>Luxury Pedicure</h3>
+            <p>Experience the ultimate relaxation with our luxury pedicure, including a soothing foot soak, exfoliation, and a hydrating treatment.</p>
+            <p class="service-price">Starting at $50</p>
+            <p>Duration: 60 minutes</p>
+          </article>
+
+          <article>
+            <h3>French Tip Set</h3>
+            <p>Elevate your look with a timeless French tip set, featuring crisp, elegant tips customized to your preferred shape and length.</p>
+            <p class="service-price">Starting at $65</p>
+            <p>Duration: 90 minutes</p>
+          </article>
+
+          <article>
+            <h3>Custom Nail Art</h3>
+            <p>Express your unique style with our custom nail art services, featuring intricate designs and personalized touches.</p>
+            <p class="service-price">Starting at $15</p>
+            <p>Duration: 30 minutes</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>The Polish Portfolio</h2>
+        <p>Explore our collection of flawless sets, timeless designs, and statement-making nail artistry. Every detail is crafted with beauty and precision.</p>
+        <div class="gallery-grid">
+          <img src="images/tpd--bling-nails.png" alt="Bling Nails" class="gallery-image">
+          <img src="images/tpd-toe-pink.png" alt="Pink Toe Nails with gold ankle bracelet" class="gallery-image">
+          <img src="images/tpd-toe-white.png" alt="White Toe Nails with gold ankle bracelet" class="gallery-image">
+          <img src="images/tpd-marble-nails.png" alt="Marble Nails" class="gallery-image">
+          <img src="images/tpd-black-n-pink-nails.png" alt="Black and Pink Nails" class="gallery-image">
+          <img src="images/tpd-nails-french-white.png" alt="French White Nails" class="gallery-image">
+        </div>
+      </section>
+
+      <section id="booking">
+        <h2>Book Your Appointment</h2>
+        <p>Schedule your next visit to The Polish District and experience the finest nail care in town.</p>
+
+        <div class="booking-layout">
+          <img src="images/tpd-nail-salon.png" alt="The Polish District Nail Salon" class="booking-image">
+          <form method="post" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tel">Phone Number:</label>
+            <input type="tel" id="tel" name="tel" required>
+
+            <label for="service">Select Your Nail Service:</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="acrylic_full_set">Acrylic Full Set</option>
+              <option value="acrylic_fill_in">Acrylic Fill-In</option>
+              <option value="gel_manicure">Gel Manicure</option>
+              <option value="luxury_pedicure">Luxury Pedicure</option>
+              <option value="french_tip_set">French Tip Set</option>
+              <option value="custom_nail_art">Custom Nail Art</option>
+            </select>
+
+           <label for="nail-shape">Preferred Nail Shape:</label>
+           <select id="nail-shape" name="nail-shape">
+             <option value="">Select a nail shape</option>
+             <option value="coffin">Coffin</option>
+             <option value="almond">Almond</option>
+             <option value="square">Square</option>
+             <option value="stiletto">Stiletto</option>
+             <option value="oval">Oval</option>
+             <option value="round">Round</option>
+             <option value="other">Other</option>
+           </select>
+
+            <label for="date">Preferred Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Appointment Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="message">Nail Preferences (Optional):</label>
+            <textarea id="message" name="message" placeholder="Tell us about your dream set! Include your preferred shape, length, colors, or nail art ideas." rows="4" cols="40"></textarea>
+
+            <label for="inspiration">Upload Your Nail Inspiration (Optional):</label>
+            <input type="file" id="inspiration" name="inspiration" accept="image/*">
+
+            <button type="submit">Request My Appointment</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 The Polish District. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

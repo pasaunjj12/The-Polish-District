@@ -1,0 +1,254 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: "Times New Roman", serif;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #171717;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #171717;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 18px;
+}
+
+nav ul a:hover {
+    color: #e72a83;  
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+header p {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px auto;
+    color: #171717;
+    max-width: 800px;
+}
+
+#services {
+    padding: 15px 40px 15px;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#services article {
+    border: 2px solid #e72a83;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 0;
+    flex-basis: calc((100% - 40px) / 3);
+    transition: transform 0.3s ease;
+    background-color: #FFF0F6;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-price {
+    font-weight: bold;
+    color: #c99a3d;
+}
+
+#services h3 {
+    font-size: 22px;
+    color: #171717;
+}
+
+#services article:hover {
+    transform: translateY(-5px);
+}
+
+#gallery {
+    padding: 15px 40px 40px;
+}
+
+#gallery h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    display: block;
+    border: 3px solid #C99A3D;
+    box-sizing: border-box;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+#gallery > p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.booking-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.booking-image {
+    width: calc((100% - 20px) / 2);
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 3px solid #C99A3D;
+}
+
+.booking-layout form {
+    width: calc((100% - 20px) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    border: 2px solid #e72a83;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #FFF0F6;
+}
+
+#booking h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#booking > p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.booking-layout input,
+.booking-layout select,
+.booking-layout textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.booking-layout button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #e72a83;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.booking-layout button:hover {
+    background-color: #c99a3d;
+}
+
+#services article p {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #171717;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* Decorative Pink Diamonds */
+#services h2::after,
+#gallery h2::after,
+#booking h2::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #E72A83;
+    transform: rotate(45deg);
+    margin: 15px auto 25px;
+    box-shadow: 2px 2px 5px rgba(231, 42, 131, 0.3);
+}
+
+
+@media (max-width: 600px) {
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booking-layout {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .booking-image,
+    .booking-layout form {
+        width: 100%;
+    }
+
+    .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    #services article {
+    width: 100%;
+    flex-basis: auto;
+   }
+}
