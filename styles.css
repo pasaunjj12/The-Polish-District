@@ -335,3 +335,14 @@ footer {
     flex-basis: auto;
    }
 }
+
+
+body {
+  background: linear-gradient(
+    to bottom,
+    #FFFFFF 0%,
+    #FFF8FB 35%,
+    #FBE5EF 70%,
+    #F7C9DE 100%
+  );
+}
